@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ion Stoica - Professor of Computer Science</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            background: #003262;
+            color: white;
+            padding: 20px 30px;
+            border-bottom: 4px solid #fdb515;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            font-weight: normal;
+        }
+        
+        .header .title {
+            font-size: 1.1em;
+            margin-top: 5px;
+            opacity: 0.9;
+        }
+        
+        .nav {
+            background: #fdb515;
+            padding: 0;
+        }
+        
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        .nav li {
+            border-right: 1px solid #e6a000;
+        }
+        
+        .nav a {
+            display: block;
+            padding: 12px 20px;
+            color: #003262;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .nav a:hover, .nav a.active {
+            background: #e6a000;
+            color: white;
+        }
+        
+        .content {
+            display: flex;
+            min-height: 600px;
+        }
+        
+        .sidebar {
+            width: 250px;
+            background: #f1f3f4;
+            padding: 30px 20px;
+            border-right: 1px solid #ddd;
+        }
+        
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            background: #ddd;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+        }
+        
+        .contact-info {
+            font-size: 0.9em;
+            line-height: 1.8;
+        }
+        
+        .contact-info strong {
+            color: #003262;
+        }
+        
+        .main-content {
+            flex: 1;
+            padding: 30px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
+            color: #003262;
+            border-bottom: 2px solid #fdb515;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        
+        .news-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .news-date {
+            color: #666;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        
+        .paper {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-left: 4px solid #fdb515;
+        }
+        
+        .paper-title {
+            font-weight: bold;
+            color: #003262;
+            margin-bottom: 5px;
+        }
+        
+        .paper-authors {
+            font-style: italic;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        
+        .paper-venue {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        
+        .paper-abstract {
+            font-size: 0.9em;
+            line-height: 1.5;
+            color: #444;
+        }
+        
+        .award {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        
+        .highlight {
+            background: #ffffcc;
+            padding: 2px 4px;
+            border-radius: 2px;
+        }
+        
+        .footer {
+            background: #003262;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+        
+        .domain-status {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .blinking {
+            animation: blink 2s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.3; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Ion Stoica</h1>
+            <div class="title">Professor of Computer Science • University of California, Berkeley</div>
+        </header>
+        
+        <nav class="nav">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">Publications</a></li>
+                <li><a href="#">Teaching</a></li>
+                <li><a href="#">Students</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="content">
+            <aside class="sidebar">
+                <div class="profile-img">
+                    [Professional headshot would go here if this were actually Ion's website]
+                </div>
+                <div class="contact-info">
+                    <strong>Office:</strong> Soda Hall 777<br>
+                    <strong>Email:</strong> istoica@berkeley.edu<br>
+                    <strong>Phone:</strong> (510) 666-DOMAIN<br>
+                    <strong>Office Hours:</strong> By appointment<br><br>
+                    <strong>Research Interests:</strong><br>
+                    • Domain Name Acquisition<br>
+                    • DNS Resolution Optimization<br>
+                    • Distributed Domain Systems<br>
+                    • Cloud Domain Management<br>
+                    • Academic Web Presence<br>
+                </div>
+            </aside>
+            
+            <main class="main-content">
+                <div class="domain-status blinking">
+                    🚨 DOMAIN STATUS UPDATE: ionstoica.com now under new management! 🚨
+                </div>
+                
+                <div class="section">
+                    <h2>About</h2>
+                    <p>Welcome to the research homepage of Professor Ion Stoica, a leading expert in distributed systems and, more recently, a case study in the importance of domain name ownership. Professor Stoica's groundbreaking work spans multiple areas of computer science, though notably <span class="highlight">not including personal domain management</span>.</p>
+                    
+                    <p>Professor Stoica has made significant contributions to systems research over the past two decades. However, his most impactful contribution to the field may inadvertently be demonstrating how easily one can acquire a prominent academic's domain name for approximately <span class="highlight">$12 per year</span>.</p>
+                </div>
+                
+                <div class="section">
+                    <h2>Recent News</h2>
+                    <div class="news-item">
+                        <div class="news-date">May 2025</div>
+                        <div>Domain ionstoica.com acquired by enterprising graduate student. Professor Stoica reportedly "had no idea domains could be purchased by individuals."</div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-date">April 2025</div>
+                        <div>New paper accepted at SOSP on "Distributed Hash Tables for Academic Domain Ownership" - a cautionary tale.</div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-date">March 2025</div>
+                        <div>Gave keynote at NSDI titled "Scalable Systems for Everything Except Domain Registration"</div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-date">February 2025</div>
+                        <div>Received the "Ironic Digital Presence Award" from the ACM for excellence in distributed systems research combined with minimal personal web presence.</div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2>Selected Publications</h2>
+                    
+                    <div class="paper">
+                        <div class="paper-title">A Comprehensive Analysis of Why I Don't Own My Own Domain: A Distributed Systems Perspective</div>
+                        <div class="paper-authors">Ion Stoica, Anonymous Student</div>
+                        <div class="paper-venue">Proceedings of the Symposium on Obvious Oversights in Digital Infrastructure (SOODI) 2025</div>
+                        <div class="paper-abstract">In this paper, we examine the systematic failure of a prominent distributed systems researcher to secure basic digital real estate. We propose a novel framework for understanding how someone can optimize data center resource allocation across thousands of machines while failing to complete a simple domain registration process.</div>
+                    </div>
+                    
+                    <div class="paper">
+                        <div class="paper-title">Chord: A Scalable Peer-to-peer Lookup Service for Finding Available Domains</div>
+                        <div class="paper-authors">Ion Stoica, Robert Morris, David Karger, M. Frans Kaashoek, Hari Balakrishnan</div>
+                        <div class="paper-venue">ACM SIGCOMM 2001 (Retroactively Updated Abstract)</div>
+                        <div class="paper-abstract">We present Chord, a distributed lookup protocol that efficiently locates available domain names in a peer-to-peer system. While originally designed for general distributed hash tables, this system could have been used to check if ionstoica.com was available. Unfortunately, this application was not explored at the time.</div>
+                    </div>
+                    
+                    <div class="paper">
+                        <div class="paper-title">Apache Spark: Unified Analytics Engine for Large-Scale Domain Availability Checking</div>
+                        <div class="paper-authors">Matei Zaharia, Reynold S. Xin, Patrick Wendell, Tathagata Das, Michael Armbrust, Ankur Dave, Xiangrui Meng, Josh Rosen, Shivaram Venkataraman, Michael J. Franklin, Ali Ghodsi, Joseph Gonzalez, Scott Shenker, Ion Stoica</div>
+                        <div class="paper-venue">Communications of the ACM, Vol. 59 No. 11, Pages 56-65 (Alternative Timeline Edition)</div>
+                        <div class="paper-abstract">Apache Spark enables fast, distributed processing of big data workloads. In this alternative timeline, we demonstrate how Spark could process WHOIS databases at scale to identify available academic domains. A simple 10-line Spark job could have prevented the domain acquisition incident of 2025.</div>
+                    </div>
+                    
+                    <div class="paper">
+                        <div class="paper-title">Ray: A Distributed Framework for Emerging AI Applications and Domain Registration Automation</div>
+                        <div class="paper-authors">Philipp Moritz, Robert Nishihara, Stephanie Wang, Alexey Tumanov, Richard Liaw, Eric Liang, Melih Elibol, Zongheng Yang, William Paul, Michael I. Jordan, Ion Stoica</div>
+                        < div class="paper-venue">OSDI 2018 (Hindsight is 20/20 Edition)</div>
+                        <div class="paper-abstract">Ray is a high-performance distributed execution framework targeting large-scale machine learning and reinforcement learning applications. We show how Ray's actor model could have been used to create an autonomous domain registration agent, preventing future domain acquisition embarrassments.</div>
+                    </div>
+                    
+                    <div class="paper">
+                        <div class="paper-title">The Case for Domain-Driven Distributed Systems</div>
+                        <div class="paper-authors">Ion Stoica, Scott Shenker</div>
+                        <div class="paper-venue">HotOS Workshop on Hot Topics in Operating Systems 2025</div>
+                        <div class="paper-abstract">We argue that future distributed systems should be inherently domain-aware, automatically registering and managing domain names as a core system service. This work is inspired by recent personal experiences in the domain acquisition space.</div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2>Awards and Recognition</h2>
+                    <div class="award">
+                        <strong>2025</strong> - Most Ironic Digital Presence Award, Association for Computing Machinery
+                    </div>
+                    <div class="award">
+                        <strong>2024</strong> - Distinguished Educator Award for Teaching Students About Domain Ownership (Through Example)
+                    </div>
+                    <div class="award">
+                        <strong>2023</strong> - Lifetime Achievement Award in Distributed Systems (Domain Management Division Pending)
+                    </div>
+                    <div class="award">
+                        <strong>2020</strong> - ACM Fellow (Domain Registration Skills Not Verified)
+                    </div>
+                    <div class="award">
+                        <strong>2018</strong> - IEEE Fellow for contributions to distributed systems and unintentional contributions to domain availability research
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2>Teaching</h2>
+                    <p><strong>Current Courses:</strong></p>
+                    <ul>
+                        <li>CS 162: Operating Systems and System Programming</li>
+                        <li>CS 294: Advanced Topics in Computer Systems (New Module: "Basic Web Presence Management")</li>
+                        <li>CS 290: Graduate Seminar on Distributed Systems and Personal Domain Security</li>
+                    </ul>
+                    
+                    <p><strong>Office Hours Note:</strong> Please do not ask about domain registration during office hours. I am still learning about this mysterious process myself.</p>
+                </div>
+            </main>
+        </div>
+        
+        <footer class="footer">
+            <p>© 2025 Ion Stoica | University of California, Berkeley<br>
+            <small>Domain hosting graciously provided by an anonymous graduate student | 
+            Original domain owner can reclaim by demonstrating basic WHOIS knowledge</small></p>
+        </footer>
+    </div>
+</body>
+</html>
