@@ -188,18 +188,53 @@
         }
         
         .domain-status {
-            background: #d4edda;
-            border: 1px solid #c3e6cb;
-            color: #155724;
-            padding: 15px;
-            border-radius: 5px;
+            background: linear-gradient(45deg, #ff006e, #8338ec, #3a86ff);
+            background-size: 300% 300%;
+            border: 2px solid #fff;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
             margin-bottom: 20px;
             text-align: center;
             font-weight: bold;
+            font-size: 1.1em;
+            box-shadow: 
+                0 0 20px rgba(255, 0, 110, 0.5),
+                0 0 40px rgba(131, 56, 236, 0.3),
+                0 0 60px rgba(58, 134, 255, 0.2),
+                inset 0 0 20px rgba(255, 255, 255, 0.1);
+            animation: neonGlow 3s ease-in-out infinite alternate, gradientShift 6s ease infinite;
+            text-shadow: 
+                0 0 10px rgba(255, 255, 255, 0.8),
+                0 0 20px rgba(255, 0, 110, 0.6),
+                0 0 30px rgba(131, 56, 236, 0.4);
         }
         
         .blinking {
-            animation: blink 2s infinite;
+            /* Remove blinking class styles */
+        }
+        
+        @keyframes neonGlow {
+            0% { 
+                box-shadow: 
+                    0 0 20px rgba(255, 0, 110, 0.5),
+                    0 0 40px rgba(131, 56, 236, 0.3),
+                    0 0 60px rgba(58, 134, 255, 0.2),
+                    inset 0 0 20px rgba(255, 255, 255, 0.1);
+            }
+            100% { 
+                box-shadow: 
+                    0 0 30px rgba(255, 0, 110, 0.8),
+                    0 0 60px rgba(131, 56, 236, 0.6),
+                    0 0 90px rgba(58, 134, 255, 0.4),
+                    inset 0 0 30px rgba(255, 255, 255, 0.2);
+            }
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
         
         @keyframes blink {
@@ -217,19 +252,17 @@
         
         <nav class="nav">
             <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Research</a></li>
-                <li><a href="#">Publications</a></li>
-                <li><a href="#">Teaching</a></li>
-                <li><a href="#">Students</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#teaching">Teaching</a></li>
+                <li><a href="#awards">Awards</a></li>
             </ul>
         </nav>
         
         <div class="content">
             <aside class="sidebar">
                 <div class="profile-img">
-                    [he's too famous to need a heashot, you know what he looks like]
+                    [he's too famous to need a heashot]
                 </div>
                 <div class="contact-info">
                     <strong>Office:</strong> a tiny meeting room in Sky Computing Lab that he never reserves<br>
@@ -238,17 +271,17 @@
                     <strong>Office Hours:</strong> wait, he teaches??<br><br>
                     <strong>Research Interests:</strong><br>
                     • DNS Resolution Optimization<br>
-                    • Academic Web Presence<br>
+                    • <strike>Startup</strike> OSS Incubation<br>
                     • Milk and Tea Disaggregation<br>
                 </div>
             </aside>
             
             <main class="main-content">
                 <div class="domain-status blinking">
-                    🚨 DOMAIN STATUS UPDATE: ionstoica.com now under new management! 🚨
+                    DOMAIN STATUS UPDATE: ionstoica.com now under new management, now with 10X the satire and misinformation. 
                 </div>
                 
-                <div class="section">
+                <div id="home" class="section">
                     <h2>About</h2>
                     <p>Welcome to the research homepage of Professor Ion Stoica, a leading expert in distributed systems and, more recently, a case study in the importance of domain name ownership. Professor Stoica's groundbreaking work spans multiple areas of computer science, though notably <span class="highlight">not including personal domain management</span>.</p>
                     
@@ -275,7 +308,7 @@
                     </div>
                 </div>
                 
-                <div class="section">
+                <div id="research" class="section">
                     <h2>Selected Publications</h2>
                     
                     <div class="paper">
@@ -314,7 +347,7 @@
                     </div>
                 </div>
                 
-                <div class="section">
+                <div id="awards" class="section">
                     <h2>Awards and Recognition</h2>
                     <div class="award">
                         <strong>2025</strong> - Most Ironic Digital Presence Award, Association for Computing Machinery
@@ -333,24 +366,24 @@
                     </div>
                 </div>
                 
-                <div class="section">
+                <div id="teaching" class="section">
                     <h2>Teaching</h2>
                     <p><strong>Current Courses:</strong></p>
                     <ul>
-                        <li>CS 162: Operating Systems and System Programming</li>
-                        <li>CS 294: Advanced Topics in Computer Systems (New Module: "Basic Web Presence Management")</li>
-                        <li>CS 290: Graduate Seminar on Distributed Systems and Personal Domain Security</li>
+                        <li><strong>CS 294:</strong> Advanced Topics in Computer Systems: Basic Web Presence Management</li>
+                        <li><strong>C$ 512:</strong> Graduate Seminar on Buying Back your Domain for a Million Dollars</li>
+                        <li><strong>BIZ 100M:</strong> How to Turn Your GitHub Stars into VC Funding.</li>
                     </ul>
                     
-                    <p><strong>Office Hours Note:</strong> Please do not ask about domain registration during office hours. I am still learning about this mysterious process myself.</p>
+                    <p><strong>Office Hours Note:</strong> Please do not ask about domain registration during office hours. Also do not show this to Ion, I'm too poor to get sued.</p>
                 </div>
             </main>
         </div>
         
         <footer class="footer">
-            <p>© 2025 Ion Stoica | University of California, Berkeley<br>
-            <small>Domain hosting graciously provided by an anonymous graduate student | 
-            Original domain owner can reclaim by demonstrating basic WHOIS knowledge</small></p>
+            <p>© 2025 Ion Stoica (but not really) | University of California, Berkeley (berkeley did not consent to this being made)<br>
+            <small>Domain hosting graciously provided by an anonymous graduate student and generated almost entirely by Claude 4 Sonnet | 
+            Original domain owner can reclaim by demonstrating by sending site owenr 10M via Cash App or Zelle.</small></p>
         </footer>
     </div>
 </body>
